@@ -90,6 +90,7 @@ let candidateF = {
 // Code your template literal and console.log statements:
 // buildCrewArray(idNumbers,animals)
 // console.log(`${newCrew[0].name},${newCrew[1].name}, and ${newCrew[2 ].name} are going to space!`);
+let distance; 
 
 function getOrbitCircumfrence(radius = 2000){   
   let circumference =  2 * Math.PI * radius;
@@ -108,3 +109,15 @@ function getMissionDuration (numberOfOrbits, radius = 2000, speed = 28000 ){
 console.log(getMissionDuration(5))  // expected = 2.24
 
 // space walk formula
+
+duration = getMissionDuration(5);
+
+console.log(`The mission will travel ${distance} km  around the planet, and it will take ${duration} hours to complete.`); // expected = 2.24
+
+function getOxygenExpended(candidateObject = selectRandomEntry(crew), ){
+  let hrs = getMissionDuration(3)[time];
+  let getOxygenExpended = candidateObject.o2Used(hrs); 
+   return`${candidateObject.name} will perform the spacewalk, which willl last ${hrs} hours and will expend oxygen ${}`
+}
+console.log(getOxygenExpended())
+
